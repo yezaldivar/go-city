@@ -14,9 +14,9 @@ function main() {
 
     const mouseStep = THREE.MathUtils.degToRad(5);
 
-    const video = document.getElementById( 'videotexture' );
+    /*const video = document.getElementById( 'videotexture' );
     const texture = new THREE.VideoTexture( video );
-	texture.colorSpace = THREE.SRGBColorSpace;
+	texture.colorSpace = THREE.SRGBColorSpace;*/
 
 
     let orientationControls;
@@ -113,10 +113,10 @@ function main() {
     function setupObjects(longitude, latitude) {
         const geom = new THREE.PlaneGeometry(80,60);
 
-        const material = new THREE.MeshBasicMaterial({color: 0xffffff, map: texture});
-        const material2 = new THREE.MeshBasicMaterial({color: 0xffff00,  map: texture});
-        const material3 = new THREE.MeshBasicMaterial({color: 0x0000ff,  map: texture});
-        const material4 = new THREE.MeshBasicMaterial({color: 0x00ff00,  map: texture});
+        const material = new THREE.MeshBasicMaterial({color: 0xffffff, /*map: texture*/});
+        const material2 = new THREE.MeshBasicMaterial({color: 0xffff00,  /*map: texture*/});
+        const material3 = new THREE.MeshBasicMaterial({color: 0x0000ff,  /*map: texture*/});
+    const material4 = new THREE.MeshBasicMaterial({color: 0x00ff00,  /*map: texture*/});
 
         const m1 = new THREE.Mesh(geom, material);
         meshes.push(m1);
