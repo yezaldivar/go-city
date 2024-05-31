@@ -90,7 +90,7 @@ function main() {
   function render(time) {
     resizeUpdate();
     if (orientationControls) orientationControls.update();
-    //cam.update();
+    cam.update();
     renderer.render(scene, camera);
 
     for (const m of meshes) {
