@@ -97,6 +97,8 @@ function main() {
       m.lookAt(camera.position);
     }
 
+    console.log('render')
+
     requestAnimationFrame(render);
   }
 
@@ -112,6 +114,9 @@ function main() {
   }
 
   function setupObjects(longitude, latitude) {
+
+    console.log('setupObjects')
+
     const geom = new THREE.PlaneGeometry(80, 60);
 
     const material = new THREE.MeshBasicMaterial({
