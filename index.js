@@ -38,7 +38,7 @@ function main() {
 
   let meshes = [];
   // Uncomment to use a fake GPS location
-  fake = { lat: 51.05, lon: -0.72 };
+  // fake = { lat: 51.05, lon: -0.72 };
   if (fake) {
     arjs.fakeGps(fake.lon, fake.lat);
   } else {
