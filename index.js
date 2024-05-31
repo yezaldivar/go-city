@@ -90,14 +90,12 @@ function main() {
   function render(time) {
     resizeUpdate();
     if (orientationControls) orientationControls.update();
-    cam.update();
+    //cam.update();
     renderer.render(scene, camera);
 
     for (const m of meshes) {
       m.lookAt(camera.position);
     }
-
-    console.log('render')
 
     requestAnimationFrame(render);
   }
@@ -153,5 +151,4 @@ function main() {
   requestAnimationFrame(render);
 }
 
-console.log('calling main')
 main();
