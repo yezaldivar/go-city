@@ -7,7 +7,7 @@ function main() {
   });
 
   const arjs = new THREEx.LocationBased(scene, camera);
-  const cam = new THREEx.WebcamRenderer(renderer, "#video1");
+  //const cam = new THREEx.WebcamRenderer(renderer, "#video1");
 
   const mouseStep = THREE.MathUtils.degToRad(5);
 
@@ -90,7 +90,7 @@ function main() {
   function render(time) {
     resizeUpdate();
     if (orientationControls) orientationControls.update();
-    cam.update();
+    //cam.update();
     renderer.render(scene, camera);
 
     for (const m of meshes) {
@@ -112,8 +112,6 @@ function main() {
   }
 
   function setupObjects(longitude, latitude) {
-
-    alert(`setupObjects`);
 
     const geom = new THREE.PlaneGeometry(80, 60);
 
