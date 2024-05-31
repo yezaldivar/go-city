@@ -26,7 +26,6 @@ function main() {
   let first = true;
 
   arjs.on("gpsupdate", (pos) => {
-    alert(`GPS UPDATE: code ${pos}`);
     if (first) {
       setupObjects(pos.coords.longitude, pos.coords.latitude);
       first = false;
@@ -114,7 +113,7 @@ function main() {
 
   function setupObjects(longitude, latitude) {
 
-    console.log('setupObjects')
+    alert(`setupObjects`);
 
     const geom = new THREE.PlaneGeometry(80, 60);
 
