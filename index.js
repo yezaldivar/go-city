@@ -30,7 +30,6 @@ function main() {
     let first = true;
 
     arjs.on("gpsupdate", pos => {
-        console.log(pos)
         if(first) {
             setupObjects(pos.coords.longitude, pos.coords.latitude);
             first = false;
@@ -43,7 +42,7 @@ function main() {
 
     let meshes = [];
     // Uncomment to use a fake GPS location
-    // fake = { lat: 51.05, lon : -0.72 };
+    fake = { lat: 51.05, lon : -0.72 };
     if(fake) {
         arjs.fakeGps(fake.lon, fake.lat);
     } else {
