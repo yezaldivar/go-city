@@ -153,4 +153,5 @@ function main() {
   requestAnimationFrame(render);
 }
 
+console.log('calling main')
 main();
